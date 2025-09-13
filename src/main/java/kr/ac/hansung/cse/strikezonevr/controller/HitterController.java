@@ -21,4 +21,11 @@ public class HitterController {
     public List<Hitter> getAllHitters() {
         return hitterService.getAllHitters();
     }
+
+    // 상위 10명 반환 엔드포인트
+    @GetMapping("/top")
+    public List<Hitter> getTopHitters() {
+        return hitterService.getTopHitters();
+    }
+
 }

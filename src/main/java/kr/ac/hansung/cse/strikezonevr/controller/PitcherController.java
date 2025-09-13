@@ -21,4 +21,11 @@ public class PitcherController {
     public List<Pitcher> getAllPitchers() {
         return pitcherService.getAllPitchers();
     }
+
+    // 상위 10명 반환 엔드포인트
+    @GetMapping("/top")
+    public List<Pitcher> getTopPitchers() {
+        return pitcherService.getTopPitchers();
+    }
+
 }
